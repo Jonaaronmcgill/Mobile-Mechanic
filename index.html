@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Professional mobile mechanic services for Ford, Chevy, Toyota, Honda, BMW, Mercedes and more. We come to you.">
+  <title>Mobile Mechanic | We Come To You</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Mobile<span>Mechanic</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="#brands">Brands We Service</a>
+      <a href="#contact">Request Service</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Mobile Mechanic Service</h1>
+      <p>Professional auto repairs at your home, office, or driveway. No need to wait at a shop — we come to you.</p>
+      <a href="#brands" class="btn">View Brands We Service</a>
+    </section>
+
+    <div class="container">
+      <section id="brands">
+        <h2 class="section-title">Brands We Service</h2>
+        <p class="section-sub">Select your vehicle brand to see the services we offer</p>
+
+        <div class="brand-grid">
+          <div class="brand-card">
+            <a href="brands/ford.html">
+              <div class="brand-name">Ford</div>
+              <div class="brand-tag">F-150 • Mustang • Explorer</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/chevrolet.html">
+              <div class="brand-name">Chevrolet</div>
+              <div class="brand-tag">Silverado • Equinox • Camaro</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/gmc.html">
+              <div class="brand-name">GMC</div>
+              <div class="brand-tag">Sierra • Yukon • Terrain</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/ram.html">
+              <div class="brand-name">Ram</div>
+              <div class="brand-tag">1500 • 2500 • ProMaster</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/toyota.html">
+              <div class="brand-name">Toyota</div>
+              <div class="brand-tag">Camry • Tacoma • RAV4</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/honda.html">
+              <div class="brand-name">Honda</div>
+              <div class="brand-tag">Civic • Accord • CR-V</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/nissan.html">
+              <div class="brand-name">Nissan</div>
+              <div class="brand-tag">Altima • Rogue • Frontier</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/hyundai.html">
+              <div class="brand-name">Hyundai</div>
+              <div class="brand-tag">Elantra • Tucson • Santa Fe</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/kia.html">
+              <div class="brand-name">Kia</div>
+              <div class="brand-tag">Sportage • Telluride • Forte</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/jeep.html">
+              <div class="brand-name">Jeep</div>
+              <div class="brand-tag">Wrangler • Grand Cherokee</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/subaru.html">
+              <div class="brand-name">Subaru</div>
+              <div class="brand-tag">Outback • Forester • Crosstrek</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/bmw.html">
+              <div class="brand-name">BMW</div>
+              <div class="brand-tag">3 Series • X5 • 5 Series</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/mercedes.html">
+              <div class="brand-name">Mercedes-Benz</div>
+              <div class="brand-tag">C-Class • E-Class • GLC</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/audi.html">
+              <div class="brand-name">Audi</div>
+              <div class="brand-tag">A4 • Q5 • A6</div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a href="brands/volkswagen.html">
+              <div class="brand-name">Volkswagen</div>
+              <div class="brand-tag">Jetta • Tiguan • Atlas</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" style="margin-top: 2.5rem;">
+        <h2>Request Mobile Service</h2>
+        <p class="form-intro">Tell us about your vehicle and the issue. We’ll get back to you quickly to schedule a convenient time.</p>
+        
+        <form action="mailto:service@yourmobilemechanic.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="John Smith" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="vehicle">Vehicle (Year / Make / Model)</label>
+              <input type="text" id="vehicle" name="vehicle" placeholder="2020 Ford F-150">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service…</option>
+              <option>Oil Change</option>
+              <option>Brakes</option>
+              <option>Suspension</option>
+              <option>Alternator / Starter</option>
+              <option>Battery</option>
+              <option>Belts</option>
+              <option>Transmission Fluid</option>
+              <option>Diagnostic / Check Engine</option>
+              <option>Other / Not sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Describe the issue</label>
+            <textarea id="message" name="message" placeholder="What are you experiencing? Any warning lights?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Send Request</button>
+          <p class="form-note">We typically respond within a few hours during business hours.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Mobile Mechanic</div>
+      <p>Professional mobile auto repair • We come to you</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#brands">Brands</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p style="margin-top: 1rem; opacity: 0.7;">Serving your local area • Fully insured</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      toggle.textContent = menu.classList.contains('open') ? '✕' : '☰';
+    });
+  </script>
+</body>
+</html>
