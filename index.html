@@ -3,33 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Professional mobile mechanic services for Ford, Chevy, Toyota, Honda, BMW, Mercedes and more. We come to you.">
-  <title>Mobile Mechanic | We Come To You</title>
+  <meta name="description" content="24 Hour Mobile Mechanic in Fort Worth. Professional mobile auto repair for Ford, Chevy, Toyota, Honda, BMW, Mercedes, Dodge, Land Rover and more. We come to you. Call (817) 696-0349.">
+  <title>24 Hour Mobile Mechanic | Fort Worth | We Come To You</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="nav-inner">
       <a href="index.html" class="logo">Mobile<span>Mechanic</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      <div class="nav-right">
+        <a href="tel:8176960349" class="btn-call btn-call-desktop">📞 Call Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#brands">Brands</a></li>
+        <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:8176960349">Call (817) 696-0349</a></li>
       </ul>
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <a href="index.html">Home</a>
       <a href="#brands">Brands We Service</a>
+      <a href="#reviews">Google Reviews</a>
       <a href="#contact">Request Service</a>
+      <a href="tel:8176960349" class="btn-call btn-call-mobile" style="margin: 0.75rem 0.5rem; text-align: center;">📞 Call Now — (817) 696-0349</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Mobile Mechanic Service</h1>
-      <p>Professional auto repairs at your home, office, or driveway. No need to wait at a shop — we come to you.</p>
-      <a href="#brands" class="btn">View Brands We Service</a>
+      <h1>24 Hour Mobile Mechanic</h1>
+      <p>Professional auto repairs at your home, office, or driveway in Fort Worth and surrounding areas. No need to wait at a shop — we come to you.</p>
+      <a href="tel:8176960349" class="btn">Call Now — (817) 696-0349</a>
+      <a href="#brands" class="btn btn-outline" style="margin-left: 0.5rem; margin-top: 0.5rem;">View Brands</a>
     </section>
 
     <div class="container">
@@ -57,9 +65,9 @@
             </a>
           </div>
           <div class="brand-card">
-            <a href="brands/ram.html">
-              <div class="brand-name">Ram</div>
-              <div class="brand-tag">1500 • 2500 • ProMaster</div>
+            <a href="brands/dodge.html">
+              <div class="brand-name">Dodge</div>
+              <div class="brand-tag">Charger • Challenger • Durango</div>
             </a>
           </div>
           <div class="brand-card">
@@ -128,12 +136,37 @@
               <div class="brand-tag">Jetta • Tiguan • Atlas</div>
             </a>
           </div>
+          <div class="brand-card">
+            <a href="brands/landrover.html">
+              <div class="brand-name">Land Rover</div>
+              <div class="brand-tag">Range Rover • Defender • Discovery</div>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="contact-section" style="margin-top: 2.5rem;">
+      <section id="reviews" class="reviews-section">
+        <h2>What Customers Say on Google</h2>
+        <div class="reviews-stars">★★★★★</div>
+        <div class="reviews-rating">4.9 out of 5</div>
+        <p class="reviews-count">Based on 35+ Google reviews</p>
+        <p style="max-width: 480px; margin: 0 auto 1.25rem; color: var(--text-muted); font-size: 0.95rem;">
+          Real feedback from Fort Worth drivers who trusted us to come to them.
+        </p>
+        <a href="https://share.google/kI2drlkfomhyqCyop" target="_blank" rel="noopener" class="btn">
+          Read Our Google Reviews
+        </a>
+        <a href="https://share.google/kI2drlkfomhyqCyop" target="_blank" rel="noopener" class="btn btn-outline" style="background: transparent; border: 2px solid var(--accent); color: var(--accent) !important;">
+          Leave a Review
+        </a>
+        <p class="reviews-note">
+          Live review cards can be added once you provide a Google Place ID or a free widget embed code.
+        </p>
+      </section>
+
+      <section id="contact" class="contact-section">
         <h2>Request Mobile Service</h2>
-        <p class="form-intro">Tell us about your vehicle and the issue. We’ll get back to you quickly to schedule a convenient time.</p>
+        <p class="form-intro">Tell us about your vehicle and the issue. Or just call — we’ll get back to you quickly to schedule a convenient time.</p>
         
         <form action="mailto:service@yourmobilemechanic.com" method="POST" enctype="text/plain">
           <div class="form-row">
@@ -143,7 +176,7 @@
             </div>
             <div class="form-group">
               <label for="phone">Phone *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" autocomplete="tel">
+              <input type="tel" id="phone" name="phone" required placeholder="(817) 555-1234" autocomplete="tel">
             </div>
           </div>
           <div class="form-row">
@@ -176,7 +209,7 @@
             <textarea id="message" name="message" placeholder="What are you experiencing? Any warning lights?"></textarea>
           </div>
           <button type="submit" class="btn btn-block">Send Request</button>
-          <p class="form-note">We typically respond within a few hours during business hours.</p>
+          <p class="form-note">Prefer to talk? Call or text <a href="tel:8176960349">(817) 696-0349</a> — we typically respond quickly.</p>
         </form>
       </section>
     </div>
@@ -184,14 +217,17 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">Mobile Mechanic</div>
+      <div class="footer-brand">24 Hour Mobile Mechanic</div>
       <p>Professional mobile auto repair • We come to you</p>
+      <p style="margin-top: 0.35rem; font-weight: 600; color: #e9ecef;">1218 NW 25th St. • (817) 696-0349</p>
       <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="#brands">Brands</a>
+        <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
+        <a href="tel:8176960349">Call Now</a>
       </div>
-      <p style="margin-top: 1rem; opacity: 0.7;">Serving your local area • Fully insured</p>
+      <p style="margin-top: 1rem; opacity: 0.7;">Fort Worth, TX & surrounding areas • Fully insured</p>
     </div>
   </footer>
 
