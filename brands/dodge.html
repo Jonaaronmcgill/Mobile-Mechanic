@@ -38,7 +38,7 @@
           <a href="../index.html">Home</a> → <a href="../index.html#brands">Brands</a> → Dodge
         </div>
         <h1>Dodge Mobile Services</h1>
-        <p>Expert mobile repairs for Charger, Challenger, Durango, Hornet, Journey and more</p>
+        <p>Expert mobile repairs for Charger, Challenger, Durango, Hornet, Journey, Grand Caravan, Ram 1500, Ram 2500, Dakota and more</p>
       </div>
     </section>
 
@@ -193,7 +193,7 @@
             </div>
             <div class="form-group">
               <label for="vehicle">Year / Model</label>
-              <input type="text" id="vehicle" name="vehicle" placeholder="2021 Charger R/T">
+              <input type="text" id="vehicle" name="vehicle" placeholder="2021 Charger R/T or Ram 1500">
             </div>
           </div>
           <div class="form-group">
@@ -243,12 +243,46 @@
     </div>
   </footer>
 
-  <script>
+      <script>
     const toggle = document.getElementById('menuToggle');
     const menu = document.getElementById('mobileMenu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
-      toggle.textContent = menu.classList.contains('open') ? '✕' : '☰';
+    let scrollY = 0;
+
+    function openMenu() {
+      scrollY = window.scrollY;
+      menu.classList.add('open');
+      toggle.textContent = '✕';
+      document.body.classList.add('menu-open');
+      document.body.style.top = `-${scrollY}px`;
+    }
+
+    function closeMenu() {
+      menu.classList.remove('open');
+      toggle.textContent = '☰';
+      document.body.classList.remove('menu-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollY);
+    }
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (menu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Close when tapping a menu link
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => closeMenu());
+    });
+
+    // Close when tapping outside the menu
+    document.addEventListener('click', (e) => {
+      if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
+        closeMenu();
+      }
     });
   </script>
   <!-- Floating Call Now button -->

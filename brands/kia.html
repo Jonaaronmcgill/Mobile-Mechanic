@@ -243,12 +243,46 @@
     </div>
   </footer>
 
-  <script>
+      <script>
     const toggle = document.getElementById('menuToggle');
     const menu = document.getElementById('mobileMenu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
-      toggle.textContent = menu.classList.contains('open') ? '✕' : '☰';
+    let scrollY = 0;
+
+    function openMenu() {
+      scrollY = window.scrollY;
+      menu.classList.add('open');
+      toggle.textContent = '✕';
+      document.body.classList.add('menu-open');
+      document.body.style.top = `-${scrollY}px`;
+    }
+
+    function closeMenu() {
+      menu.classList.remove('open');
+      toggle.textContent = '☰';
+      document.body.classList.remove('menu-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollY);
+    }
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (menu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Close when tapping a menu link
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => closeMenu());
+    });
+
+    // Close when tapping outside the menu
+    document.addEventListener('click', (e) => {
+      if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== toggle) {
+        closeMenu();
+      }
     });
   </script>
   <!-- Floating Call Now button -->
