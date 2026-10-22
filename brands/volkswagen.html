@@ -10,9 +10,8 @@
 <body>
     <header class="site-header">
     <div class="nav-inner">
-      <a href="../index.html" class="logo">Mobile<span>Mechanic</span></a>
+      <a href="../index.html" class="logo">24 Hour <span>Mobile Mechanic</span></a>
       <div class="nav-right">
-        <a href="tel:8176960349" class="btn-call btn-call-desktop">📞 Call Now</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
       </div>
       <ul class="nav-links">
@@ -28,7 +27,7 @@
       <a href="../index.html#brands">All Brands</a>
       <a href="../index.html#reviews">Google Reviews</a>
       <a href="#contact">Request Service</a>
-      <a href="tel:8176960349" class="btn-call btn-call-mobile" style="margin: 0.75rem 0.5rem; text-align: center;">📞 Call Now — (817) 696-0349</a>
+      <a href="tel:8176960349">📞 Call Now — (817) 696-0349</a>
     </div>
   </header>
 
@@ -252,5 +251,10 @@
       toggle.textContent = menu.classList.contains('open') ? '✕' : '☰';
     });
   </script>
+  <!-- Floating Call Now button -->
+  <a href="tel:8176960349" class="fab-call" aria-label="Call now">
+    📞 Call Now
+  </a>
+
 </body>
 </html>

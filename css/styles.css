@@ -85,41 +85,51 @@ a:hover, a:focus {
   gap: 0.6rem;
 }
 
-.btn-call {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  background: var(--accent);
-  color: #fff !important;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 0.5rem 0.85rem;
-  border-radius: 8px;
-  white-space: nowrap;
-  transition: background 0.2s ease;
-}
-
-.btn-call:hover {
-  background: var(--accent-hover);
-  color: #fff !important;
-}
-
-.btn-call-desktop {
-  display: none;
-}
-
 .logo {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.02em;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
+  line-height: 1.2;
 }
 
 .logo span {
   color: var(--accent);
+}
+
+/* Floating Call Now button (bottom of screen) */
+.fab-call {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--accent);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.9rem 1.35rem;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.45);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.fab-call:hover,
+.fab-call:focus {
+  background: var(--accent-hover);
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(230, 57, 70, 0.55);
+}
+
+.fab-call:active {
+  transform: translateY(0);
 }
 
 .nav-links {
@@ -588,12 +598,8 @@ main {
     display: flex;
   }
 
-  .btn-call-desktop {
-    display: inline-flex;
-  }
-
-  .btn-call-mobile {
-    display: none;
+  .logo {
+    font-size: 1.05rem;
   }
 
   .hero {
